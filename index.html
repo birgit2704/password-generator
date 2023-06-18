@@ -19,23 +19,19 @@
       <p>Never use an insecure password again.</p>
 
       <div class="options-section">
-        <p class="option-title">
-          Options:
-          <span class="small"
-            >click first on an option then on 'Generate passwords' - you can
-            also combine options</span
-          >
-        </p>
-        <div class="option-buttons">
+        <div class="option-buttons characters">
           <button onclick="setArrayLength(62)" class="option">
             Letters + numbers
           </button>
           <button onclick="setArrayLength(characters.length)" class="option">
             Letters, numbers, special characters
           </button>
+        </div>
+        <div class="option-buttons">
           <button onclick="lengthTo8()" class="option">Length: 8</button>
           <button onclick="lengthTo10()" class="option">Length: 10</button>
           <button onclick="lengthTo12()" class="option">Length: 12</button>
+          <button onclick="lengthTo12()" class="option">Length: 15</button>
         </div>
       </div>
 
