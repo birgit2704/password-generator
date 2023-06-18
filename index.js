@@ -98,17 +98,22 @@ let passwordLength = 15;
 let arrayLength = characters.length;
 
 function setArrayLength(input) {
-  arrayLength = input; // number 9 is at index 61
+  removeStyles("chars");
+  arrayLength = input; // number 9 is at index 61 //array.length is 91
+  document.getElementById(input).style.background = "#a7f3d0";
 }
 
-function lengthTo8() {
-  return (passwordLength = 8);
+function setLength(input) {
+  removeStyles("length");
+  passwordLength = input;
+  document.getElementById(input).style.background = "#a7f3d0";
 }
-function lengthTo10() {
-  return (passwordLength = 10);
-}
-function lengthTo12() {
-  return (passwordLength = 12);
+
+function removeStyles(input) {
+  let lengthBtns = document.getElementsByClassName(input);
+  for (let i = 0; i < lengthBtns.length; i++) {
+    lengthBtns[i].style.background = "white";
+  }
 }
 
 function generatePasswords() {

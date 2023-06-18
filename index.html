@@ -20,18 +20,26 @@
 
       <div class="options-section">
         <div class="option-buttons characters">
-          <button onclick="setArrayLength(62)" class="option">
+          <button id="62" onclick="setArrayLength(62)" class="option chars">
             Letters + numbers
           </button>
-          <button onclick="setArrayLength(characters.length)" class="option">
+          <button id="91" onclick="setArrayLength(91)" class="option chars">
             Letters, numbers, special characters
           </button>
         </div>
         <div class="option-buttons">
-          <button onclick="lengthTo8()" class="option">Length: 8</button>
-          <button onclick="lengthTo10()" class="option">Length: 10</button>
-          <button onclick="lengthTo12()" class="option">Length: 12</button>
-          <button onclick="lengthTo12()" class="option">Length: 15</button>
+          <button id="8" onclick="setLength(8)" class="option length">
+            Length: 8
+          </button>
+          <button id="10" onclick="setLength(10)" class="option length">
+            Length: 10
+          </button>
+          <button id="12" onclick="setLength(12)" class="option length">
+            Length: 12
+          </button>
+          <button id="15" onclick="setLength(15)" class="option length">
+            Length: 15
+          </button>
         </div>
       </div>
 
